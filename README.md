@@ -37,15 +37,15 @@ wget https://raw.githubusercontent.com/dstndstn/astrometry.net/main/demo/apod4.j
 ```
 
 To create a docker volume
-`
+```
 docker volume create --driver local --opt type=ext4 --opt o=bind --opt device=/tmp/anfy/my-work --name=anfy-my-work
-`
+```
 
 # Run a container using the two volumes
 
-`
+```
 docker run --rm -ti -v anfy-index-files:/usr/local/astrometry/data -v anfy-my-work:/my-work docker.io/schastel/anfy:latest /bin/bash
-`
+```
 
 Notes: 
 
@@ -57,15 +57,15 @@ Notes:
 
 (Note that this test is the first example of the Solving section at: https://astrometry.net/doc/readme.html
 
-`
+```
 cd /my-work
 /usr/local/astrometry/bin/solve-field --scale-low 10 apod4.jpg
-`
+```
 
 which gives something like:
-`
+```
 Reading input file 1 of 1: "demo/apod4.jpg"...
 [...]
 The star 13Boo
 The star κVir
-`
+```
