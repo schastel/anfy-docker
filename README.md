@@ -30,11 +30,11 @@ We will use it when running the container
 
 Similarly, for your own work (I will use the file https://github.com/dstndstn/astrometry.net/blob/main/demo/apod2.jpg for testing):
 
-`
+```
 mkdir -p /tmp/anfy/my-work
 cd /tmp/anfy/my-work
 wget https://raw.githubusercontent.com/dstndstn/astrometry.net/main/demo/apod4.jpg
-`
+```
 
 To create a docker volume
 `
